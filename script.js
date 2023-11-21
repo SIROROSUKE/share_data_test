@@ -47,7 +47,7 @@ function updateSigninStatus(isSignedIn) {
 function fetchDataFromSheet() {
     gapi.client.sheets.spreadsheets.values.get({
         spreadsheetId: '1bNpIplWusqEn1CmvHD6s-XBIHmtG0_3boeeB5bvJU1A',
-        range: 'Sheet1' // Change to your sheet name or range
+        range: 'シート1' // Change to your sheet name or range
     }).then(function(response) {
         const values = response.result.values;
 
